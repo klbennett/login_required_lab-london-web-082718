@@ -58,7 +58,6 @@ root 'sessions#new'
 
 get '/sessions/new', to: 'sessions#new'
 get '/sessions/show', to: 'sessions#show'
-  post '/login' => 'sessions#create'
 get '/login', to: 'sessions#new', as: 'login'
 post '/sessions/create', to: 'sessions#create'
 post '/sessons/destroy', to: 'sessions#destroy'
