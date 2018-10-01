@@ -2,11 +2,7 @@ class SecretsController < ApplicationController
 before_action :require_login
 
 def show
-if current_user
-  redirect_to secrets_path
-else
-  redirect_to login_path
-end
+
 end
 
 
