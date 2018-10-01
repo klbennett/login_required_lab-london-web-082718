@@ -3,7 +3,7 @@ before_action :require_login
 
 def show
 if current_user
-  secrets_path
+  redirect_to secrets_path
 else
   redirect_to login_path
 end
