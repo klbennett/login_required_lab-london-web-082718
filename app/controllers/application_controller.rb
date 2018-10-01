@@ -9,8 +9,9 @@ def new
    session[:name]
  end
   private
+  
   def require_login
    redirect_to '/login' unless current_user
  end
 end
-end
+
