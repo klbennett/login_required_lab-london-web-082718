@@ -1,8 +1,8 @@
 class SecretsController < ApplicationController
 
 def show
-   unless session[:name]
-     redirect_to "/"
+   if session[:name] == nil
+     redirect_to "/login"
    end
  end
 
