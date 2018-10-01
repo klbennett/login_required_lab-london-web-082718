@@ -11,5 +11,6 @@ class ApplicationController < ActionController::Base
     if session[:name]
     session[:name]
   end
+end
 
 end
