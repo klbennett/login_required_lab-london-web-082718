@@ -54,15 +54,10 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
-root 'sessions#new'
-
-get '/sessions/new', to: 'sessions#new'
-get '/sessions/show', to: 'sessions#show'
-get '/login', to: 'sessions#new', as: 'login'
-post '/sessions/create', to: 'sessions#create'
-post '/sessons/destroy', to: 'sessions#destroy'
-
-get '/secrets/show', to: 'secrets#show'
+  get '/login' => 'sessions#new'
+   post '/login' => 'sessions#create'
+    post '/logout' => 'sessions#destroy'
+    get '/show' => 'secrets#show'
 
 
 end
